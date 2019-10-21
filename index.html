@@ -154,6 +154,18 @@
 			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 			<script>
 				AOS.init();
+
+				function after() {
+				  return new Promise(resolve => {
+				    setTimeout(() => {
+				    	AOS.refresh();
+				    	resolve();
+				    }, 2000);
+				  });
+				}
+				async function asyncCall() { await after(); }
+
+				asyncCall();
 			</script>
 		</div>
 	</body>
