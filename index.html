@@ -10,6 +10,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -47,14 +48,14 @@
 	<body style="max-width: 1600px;">
 		<div class="container-fluid bg-light">
 			<header>
-				<picture class="img-fluid">
+				<picture class="img-fluid" alt="Background Computer">
 					<source media="(min-width: 800px)" srcset="images/bg-big.jpg">
 					<source media="(min-width: 580px)" srcset="images/bg-md.jpg">
 					<img class="img-fluid" src="images/bg-sm.jpg">
 				</picture>
 				<div class="centered row" style="padding-bottom: 2%;">
 					<div class="col-sm-6">
-						<img class="rounded-circle" src="images/avatar.jpg"
+						<img class="rounded-circle" alt="My Avatar" src="images/avatar.jpg"
 							 style="width: 80%;margin: 10%;margin-bottom: 5px;"></img>
 						<h1 class="text-center display-4">Filip Kovačević</h1>
 					</div>
@@ -100,22 +101,22 @@
 					<div class="col-md-6">
 						<div class="jumbotron">
 						  <h1 class="display-4">Skills:</h1>
-						  <div class="alert alert-primary">
+						  <div class="alert alert-primary" data-aos="zoom-in">
  							Advanced: PowerPoint, Excel, Word, Access 
 						  </div>
-						  <div class="alert alert-primary">
+						  <div class="alert alert-primary" data-aos="zoom-in">
  							Intermediate: PHP, MySQL, Facebook Pixel
 						  </div>
-						  <div class="alert alert-primary">
+						  <div class="alert alert-primary" data-aos="zoom-in">
  							Novice: Laravel, Vue.js, Node.js, C++
 						  </div>
-						  <div class="alert alert-primary">
+						  <div class="alert alert-primary" data-aos="zoom-in">
  							Fundamental Awareness: Social Marketing
 						  </div>
 						</div>
 						<div class="jumbotron">
 						  <h1 class="display-4">Experience:</h1>
-						  <div class="alert alert-primary">
+						  <div class="alert alert-primary" data-aos="zoom-in">
  							Actively part-time working at a Kovac restaurant at Zrenjanin as a waiter since mid-2019.
 						  </div>
 						</div>
@@ -127,19 +128,19 @@
 					<h2 class="display-4 text-center">About Me</h2>
 					<div class="row">
 						<div class="col-sm-4">
-							<div class="alert alert-primary" style="height: 100%;">
+							<div class="alert alert-primary" data-aos="fade-right" style="height: 100%;">
 	 							<h2 class="text-center">Goals</h2>
 	 							<p>My primary goal is to advance knowledge, particularly in fields of Social and Paid marketing. I am fascinated with the power of Facebook Pixel, and I look further into exploring all possibilities of these tools. </p>
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<div class="alert alert-primary" style="height: 100%;">
+							<div class="alert alert-primary" data-aos="fade-down" data-aos-delay="200" style="height: 100%;">
 	 							<h2 class="text-center">Skills</h2>
 	 							<p>My focus by now was on web development. I can deploy nice looking, SEO friendly sites. My main focus is on back-end tools like Laravel & Node.JS. I built this site using Bootstrap & Netlify. The whole code is available on GitHub.</p>
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<div class="alert alert-primary" style="height: 100%;">
+							<div class="alert alert-primary" data-aos="fade-right" style="height: 100%;">
 	 							<h2 class="text-center" style="word-break: break-all;">Characteristics</h2>
 	 							<p>I consider myself a creative and worthy person. I long for sharpening my skills in all kinds of fields. I am not afraid of new challenges and adventures. I am communicative and do love work in groups as one more way to learn new skills.</p>
 							</div>
@@ -150,6 +151,10 @@
 			<footer>
 				Photos by Bram Naus and Fabian Grohs on <a class="text-dark" href="https://unsplash.com/">Unsplash</a>
 			</footer>
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			<script>
+				AOS.init({offset: 1000,});
+			</script>
 		</div>
 	</body>
 </html>
