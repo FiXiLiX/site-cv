@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
  		<meta name="viewport" content="width=device-width, initial-scale=1">
- 		<meta name="description" value="Everything about me that you wanted to know - Contact, Skills and a few words about me">
+ 		<meta name="description" value="Everything about me that you wanted to know - Contact, Skills and a few words about">
 		<title>Filip Kovacevic</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -49,7 +49,7 @@
 					</div>
 					<div class="col-sm-6">
 						<div style="margin:10%;">
-							<p><b>Phone:</b><br/>+381611779564</p>
+							<p><b>Phone:</b><br/></p>
 							<p><b>E-mail:</b><br/>filip.kovacevic@protonmail.com</p>
 							<p><b>Site:</b><br/><a href="https://kovacevic.netlify.com/">kovacevic.netlify.com</a></p>
 							<p><b>Residence:</b><br/>Zrenjanin, Serbia</p><br/><br/>
@@ -82,7 +82,7 @@
 					<div class="col-md-6">
 						<div class="jumbotron">
 						    <p>College:</p>
-						    <h1 class="display-4">TF "Mihailo Pupin", Zrenjanin</h1>
+						    <h1 class="display-4">TF "Mihajlo Pupin", Zrenjanin</h1>
 						    <p>2019-</p>
 						</div>
 						<div class="jumbotron text-right">
@@ -146,10 +146,11 @@
 			<footer>
 				Photos by Bram Naus and Fabian Grohs on <a class="text-dark" href="https://unsplash.com/">Unsplash</a>
 			</footer>
+			<script src="./src/script.js"></script>
 			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 			<script>
+				//Proper on screen effect
 				AOS.init();
-
 				function after() {
 				  return new Promise(resolve => {
 				    setTimeout(() => {
@@ -158,9 +159,7 @@
 				    }, 2000);
 				  });
 				}
-				
 				async function asyncCall() { await after(); }
-
 				asyncCall();
 			</script>
 		</div>
