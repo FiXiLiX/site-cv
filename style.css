@@ -1,0 +1,23 @@
+header{
+    position: relative;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(0%, -50%);
+    width: 90%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+a{
+    color: white;
+}
+
+#avatar {
+    width: 80%;
+    margin: 10%;
+    margin-bottom: 5px;
+}
